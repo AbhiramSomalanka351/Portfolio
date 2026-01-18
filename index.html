@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Abhiram Somalanka | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #071329;
+            color: #e5e7eb;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0;
+            border-bottom: 1px solid #1f2937;
+        }
+
+        .profile-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile-info img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #38bdf8;
+        }
+
+        .profile-text h1 {
+            font-size: 28px;
+            margin-bottom: 6px;
+        }
+
+        .profile-text h2 {
+            font-size: 16px;
+            font-weight: normal;
+            color: #9ca3af;
+            margin-bottom: 8px;
+        }
+
+        .profile-text p {
+            font-size: 14px;
+            color: #d1d5db;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        nav ul li a {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* Sections */
+        section {
+            padding: 30px 0;
+            border-bottom: 1px solid #1f2937;
+        }
+
+        section h2 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #e5e7eb;
+        }
+
+        .about p {
+            font-size: 15px;
+            max-width: 800px;
+        }
+
+        /* Skills */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #111827;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            border: 1px solid #1f2937;
+        }
+
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: #111827;
+            padding: 16px;
+            border-radius: 10px;
+            border: 1px solid #1f2937;
+        }
+
+        .project-card h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .project-card p {
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #d1d5db;
+        }
+
+        .project-card span {
+            font-size: 12px;
+            color: #bf5429;
+        }
+
+        /* Contact */
+        .contact-info p {
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        .social-links a {
+            margin-right: 12px;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0 30px;
+            font-size: 13px;
+            color: #6b7280;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                padding-top: 10px;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- HEADER -->
+        <header>
+            <div class="profile-info">
+                <!-- Replace src with your photo path -->
+                <img src="Profile Pic.jpg" alt="Profile Photo">
+                <div class="profile-text">
+                    <h1>Abhiram Somalanka</h1>
+                    <h2>B.Tech CSE(AI) Student | Aspiring Developer</h2>
+                    <p>
+                        Passionate about web development, data structures, and solving real-world problems
+                        using clean and efficient code.
+                    </p>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- ABOUT -->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>
+                I am an engineering student with a strong interest in programming, problem-solving,
+                and building user-friendly applications. I enjoy learning new technologies and
+                working on projects that help me grow as a developer.
+                <br><br>
+                My goal is to become a skilled software engineer and contribute to impactful
+                projects in the fields of web development, AI, and data science.
+            </p>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">Python</span>
+                <span class="skill">C / C++</span>
+                <span class="skill">Java</span>
+                <span class="skill">Data Structures & Algorithms</span>
+                <span class="skill">Git & GitHub</span>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>
+                        A responsive portfolio website built using HTML and CSS to showcase
+                        my skills, projects, and contact information.
+                    </p>
+                    <span>Tech: HTML, CSS</span>
+                </div>
+
+                <div class="project-card">
+                    <h3>Student Management System</h3>
+                    <p>
+                        A simple console-based application to manage student records such as
+                        marks, attendance, and personal details.
+                    </p>
+                    <span>Tech: Java / C++</span>
+                </div>
+
+                <div class="project-card">
+                    <h3>Basic Data Analysis</h3>
+                    <p>
+                        Used Python and Pandas to analyze sample datasets and generate
+                        summary statistics and visualizations.
+                    </p>
+                    <span>Tech: Python, Pandas</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> abhiram.somalanka007@gmail.com</p>
+                <p><strong>Phone:</strong> +91-8977940355</p>
+                <p><strong>Location:</strong> India</p>
+            </div>
+
+            <div class="social-links">
+                <p><strong>Find me on:</strong></p>
+                <a href="https://github.com/AbhiramSomalanka351" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/abhiram-somalanka-22627a35b/" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/im._.abhiii_/" target="_blank">Instagram</a>
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2026 Abhiram Somalanka. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
